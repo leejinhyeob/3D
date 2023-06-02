@@ -1,0 +1,10 @@
+void skull(int option){
+  beginShape(option);
+  vertex(-200, -200, -100);
+  vertex(200,-200,-100);
+  vertex(200,100,0);
+  vertex(0,100,200);
+  vertex(-200,100,0);
+  vertex(-200,-200,-100);
+  endShape(option);
+}
