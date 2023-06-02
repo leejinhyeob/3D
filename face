@@ -1,0 +1,43 @@
+void setup(){
+  size(800,800,P3D);
+  lights();
+  translate(width/2,height/2-50,0);
+  stroke(0);
+  fill(120);
+  skull(TRIANGLE_STRIP);
+  fill(0);
+  translate(-100,-80,180);
+  pira(TRIANGLE_STRIP);
+  translate(200,0,0);
+  pira(TRIANGLE_STRIP);
+  fill(255,0,0);
+  translate(-100,120,0);
+  pira(TRIANGLE_STRIP);
+  translate(-30,-5,0);
+  pira(TRIANGLE_STRIP);
+  translate(60,0,0);
+  pira(TRIANGLE_STRIP);
+  translate(-90,-5,0);
+  pira(TRIANGLE_STRIP);
+  translate(120,0,0);
+  pira(TRIANGLE_STRIP);
+}
+void pira(int option){
+  beginShape(option);
+  vertex(-10, -10, -10);
+  vertex( 10, -10, -10);
+  vertex(   0, 0, 10);
+
+  vertex( 10, -10, -10);
+  vertex( 10, 10, -10);
+  vertex(   0, 0, 10);
+
+  vertex( 10, 10, -10);
+  vertex(-10, 10, -10);
+  vertex(   0, 0, 10);
+
+  vertex(-10, 10, -10);
+  vertex(-10, -10, -10);
+  vertex(   0, 0, 10);
+  endShape(option);
+}
